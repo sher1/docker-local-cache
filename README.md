@@ -7,6 +7,15 @@
     
 Once the registry container is up and listening in port 5000 you must set the `registry-mirrors` key to `localhost:5000` and restart docker service.
 
+This is taken from the [docker documentation] (https://docs.docker.com/docker-hub/mirror/ 'link for local docker mirror')
+>Configure the Docker daemon
+>Either pass the --registry-mirror option when starting dockerd manually, or edit /etc/docker/daemon.json and add the registry-mirrors key and value, to make the change persistent.
+>
+>>{
+>>  "registry-mirrors": "http://localhost:5000"
+>>}
+>Save the file and reload Docker for the change to take effect.
+
 # Example
 First pull for mongo image takes 71 seconds while next pull is complete in 19 seconds.
 
