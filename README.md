@@ -1,7 +1,7 @@
 
 # Instructions
 
-    git clone https://github.com/techmaniack/docker-local-cache.git
+    git clone https://github.com/sher1/docker-local-cache.git
     cd docker-local-cache
     docker-compose up -d
     
