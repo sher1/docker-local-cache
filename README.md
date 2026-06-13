@@ -19,7 +19,7 @@ To configure a Registry to run as a pull through cache, the addition of a proxy 
 To access private images on the Docker Hub, a username and password can be supplied.
 ```yml
 proxy:
-  remoteurl: https://localhost:5000
+  remoteurl: http://localhost:5000
   username: [username]
   password: [password]
 ```
@@ -36,7 +36,7 @@ Either pass the --registry-mirror option when starting dockerd manually, or edit
 
 ```json
 {
-  "registry-mirrors": "https://localhost:5000"
+  "registry-mirrors": "http://localhost:5000"
 }
 ```
 Save the file and reload Docker for the change to take effect.
