@@ -6,7 +6,7 @@
     docker-compose up -d
     
 Once the registry container is up and listening in port 5000 you must set the `registry-mirrors` key to `localhost:5000` and restart docker service.
-
+For this to work now, you have to have the config.yml shown below. The username and password are only required for private repos that require authentication.
 This is taken from the [docker documentation] (https://docs.docker.com/docker-hub/mirror/ 'link for local docker mirror')
 Run a Registry as a pull-through cache
 The easiest way to run a registry as a pull through cache is to run the official Registry image. At least, you need to specify proxy.remoteurl within /etc/docker/registry/config.yml as described in the following subsection.
